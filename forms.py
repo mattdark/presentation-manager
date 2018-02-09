@@ -9,7 +9,7 @@ from modules.slides import *
 class PresentationList(FlaskForm):
     choice = listslides()
     presentation = SelectField(
-                   'Choose Slide',
+                   'Choose',
                    choices=choice,
                )
     submit = SubmitField("Open")
