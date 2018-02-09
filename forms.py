@@ -12,5 +12,4 @@ class PresentationList(FlaskForm):
                    'Choose Slide',
                    choices=choice,
                )
-    submit = SubmitField("Choose")
-
+    submit = SubmitField("Open")
