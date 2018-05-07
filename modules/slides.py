@@ -1,7 +1,7 @@
 import json
 
 def listslides():
-    with open('./slides.json') as data_file:
+    with open('./static/slides.json') as data_file:
         data = json.load(data_file)
 
     id = list()
@@ -17,7 +17,7 @@ def listslides():
     return list1
 
 def showslide(id):
-    with open('./slides.json') as data_file:
+    with open('./static/slides.json') as data_file:
         data = json.load(data_file)
     id = int(id)
     title = data["slides"][id-1]["title"]
