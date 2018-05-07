@@ -24,6 +24,3 @@ def presentation():
     idn = session['sliden']
     title, filen, description, style = slides.showslide(idn)
     return render_template('presentation.html', filen = filen, title = title, description = description, style = style)
-
-if __name__ == '__main__':
-   app.run(host='0.0.0.0', port='8080')
